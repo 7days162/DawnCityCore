@@ -1,0 +1,7 @@
+name: GSTAR
+version: '${project.version}'
+main: kr.mcrdev.gstar.GSTAR
+
+commands:
+  system:
+    description: 'SYSTEM COMMAND'
