@@ -1,12 +1,17 @@
 package kr.mdcdev.dawncitycore.container;
 
 import java.security.InvalidParameterException;
+import java.util.Collections;
+import java.util.Set;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
 
 public class Area2D implements Area {
+    protected final Set<UUID> members = Collections.newSetFromMap(new ConcurrentHashMap<UUID, Boolean>());
     protected final World world;
     protected final String name;
     protected final int x1, x2, z1, z2;
