@@ -7,8 +7,14 @@ import org.bukkit.entity.Entity;
 public interface Area {
     String getName();
     World getWorld();
-
     boolean contains(Location loc);
-
     <T extends Entity> boolean contains(T entity);
+
+    static Area getSingletonNullSpace() {
+        return NullSpace.getInstance();
+    }
+
+    static Area getSingletonInfinitySpace() {
+        return InfinitySpace.getInstance();
+    }
 }
