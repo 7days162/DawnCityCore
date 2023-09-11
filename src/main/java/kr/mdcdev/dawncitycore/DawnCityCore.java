@@ -6,6 +6,7 @@ public final class DawnCityCore extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        System.out.println("Test");
     }
 
     @Override
