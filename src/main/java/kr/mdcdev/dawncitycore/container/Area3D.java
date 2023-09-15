@@ -3,7 +3,7 @@ package kr.mdcdev.dawncitycore.container;
 import org.bukkit.Location;
 import org.bukkit.World;
 
-public class Area3D extends Area2D implements Area {
+public class Area3D extends Area2D {
     protected final int y1, y2;
 
     public Area3D(String name, World world, int x1, int x2, int y1, int y2, int z1, int z2) {
